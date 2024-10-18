@@ -39,10 +39,11 @@
 /* Social Icons */
 .social-icons a {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 10px;
     font-size: 50px;
     color: #0095ff;
     transition: color 0.3s ease;
+    font-weight: bold;
 }
 
 .social-icons a:hover {
