@@ -1,0 +1,136 @@
+.services {
+    padding: 50px;
+    background-color: #1d2330;
+    color: #fff;
+    text-align: center;
+}
+.services .heading {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.heading span {
+    color: #00ffff;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.services-column {
+    background-color: #2f2f2f;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px; /* Default max width for larger devices */
+}
+
+.services-column:hover {
+    border: 2px solid #00c4ff;
+    transform: translateY(-10px);
+}
+
+.services-box i {
+    font-size: 50px;
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+.services-box h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.services-box p {
+    color: #bbb;
+    font-size: 20px;
+}
+@media (max-width: 320px) {
+    .services .heading {
+        font-size: 1.5em;
+    }
+    .services-box i {
+        font-size: 30px;
+    }
+    .services-box h3 {
+        font-size: 1.2em;
+    }
+    .services-list {
+        gap: 15px;
+    }
+
+    .services-box p {
+        font-size: 0.9em;
+    }
+
+}
+
+/* Mobile Medium: 375px */
+@media (max-width: 375px) {
+    .services .heading {
+        font-size: 1.7em;
+    }
+    .services-box i {
+        font-size: 35px;
+    }
+    .services-box h3 {
+        font-size: 1.4em;
+    }
+    .services-box p {
+        font-size: 1em;
+    }
+}
+@media all and (max-width: 768px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Mobile Large: 425px */
+@media (max-width: 425px) {
+    .services .heading {
+        font-size: 1.8em;
+    }
+    .services-box i {
+        font-size: 40px;
+    }
+    .services-box h3 {
+        font-size: 1.6em;
+    }
+    .services-box p {
+        font-size: 1.1em;
+    }
+}
+
+/* Tablet: 768px */
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-box {
+        max-width: 90%; /* Expand to a higher percentage of the screen on tablets */
+    }
+}
+
+/* Laptop: 1024px */
+@media (max-width: 1024px) {
+    .services-column {
+        max-width: 250px; /* Slightly reduce width to fit more columns horizontally */
+    }
+    .services-list {
+        justify-content: space-around; /* Adjust for better spacing */
+    }
+}
+
+/* Laptop Large: 1440px */
+@media (max-width: 1440px) {
+    .services-column {
+        max-width: 280px;
+    }
+}
