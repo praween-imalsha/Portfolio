@@ -1,0 +1,80 @@
+/* -----------contact----------- */
+#contact {
+    background-color: #0095ff;
+    padding: 50px 0;
+}
+
+#contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+}
+
+.contact-left {
+    max-width: 45%;
+}
+
+.contact-left .sub-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-left i {
+    color: #023b67;
+    margin-right: 10px;
+}
+
+/* Social Icons */
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 50px;
+    color: #0095ff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1d72b8;
+}
+
+/* Form Styles */
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right input, .contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+
+
+.btn {
+    padding: 8px 20px; /* Adjusted padding for smaller size */
+    border: none;
+    outline: none;
+    color: #00eeff;
+    background-color: #023b67; /* Adding background color */
+    font-size: 14px; /* Smaller font size */
+    border-radius: 5px; /* Rounded corners for better appearance */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 0;
+}
