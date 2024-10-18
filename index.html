@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>portfolio</title>
+  <title>Portfolio</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -19,6 +19,10 @@
 
 
     }
+
+    /* Navbar Styles */
+
+
     nav{
       padding: 10px 30px;
       display: flex;
@@ -47,7 +51,16 @@
 
     }
 
-
+    @keyframes slideTop  {
+      0%{
+        transform: translatey(100px);
+        opacity: 0;
+      }
+      100%{
+        transform: translatey(0px);
+        opacity: 1;
+      }
+    }
     .navbar a:hover {
       color: #0ef;
     }
@@ -85,6 +98,7 @@
         opacity: 1;
       }
     }
+
     .home {
       position: relative;
       width: 100%;
@@ -104,6 +118,65 @@
     .pragraph{
       font-size: 30px;
     }
+    .image {
+      position: relative;
+      border-radius: 50%;
+      padding: 10px;
+      background-color: #00ffff;
+      box-shadow: 0 0 30px #00ffff;
+      display: inline-block;
+    }
+
+    .profile-image {
+      border-radius: 100%;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+
+    }
+
+    .image {
+      margin-left: 20px; /* Add space between content and image */
+    }
+
+    .home-content {
+      max-width: 600px;
+    }
+
+    .home-content h3 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .home-content h1 {
+      font-size: 30px;
+      font-weight: 700;
+      margin: -3px;
+    }
+
+    .icon a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background: transparent;
+      border: 2px solid #0ef;
+      border-radius: 50%;
+      font-size: 30px;
+      color: #00eeff;
+      text-decoration: none;
+      margin: 30px 15px 30px 0;
+
+    }
+
+    .icon a:hover {
+      background-color: #0ef;
+      color: #fff;
+      transform: translateY(-5px);
+    }
+
+
   </style>
 </head>
 <body>
@@ -120,26 +193,30 @@
       <li><a href="#Assigment">Assigment</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <section id="home" class="home">
-      <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1 class="animate__animated animate__bounce">Praween Imalsha</h1>
-        <h3>And I'm a <span class="text"></span> </h3>
-        <br>
-        <p class="pragraph">As a UI/UX Designer, I focus on creating intuitive and engaging user experiences.
-          By combining design aesthetics with technical skills, I develop interfaces that are both visually appealing and functional, ensuring a seamless and enjoyable user journey.</p>
-        <div class="icon">
-          <a href="#"><i class='bx bxl-facebook-square'></i></a>
-          <a href="#"><i class='bx bxl-instagram'></i></a>
-          <a href="#"><i class='bx bxl-whatsapp'></i></a>
-          <a href="#"><i class='bx bxl-linkedin'></i></a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="/images/DSC_2905-removebg-preview.png" alt="Profile Image" class="profile-image">
-      </div>
-    </section>
+
   </nav>
 </header>
+
+<section id="home" class="home">
+  <div class="home-content">
+    <h3>Hello, It's Me</h3>
+    <h1 class="animate__animated animate__bounce">Praween Imalsha</h1>
+    <h3>And I'm a <span class="text"></span> </h3>
+    <br>
+    <p class="pragraph">As a UI/UX Designer, I focus on creating intuitive and engaging user experiences.
+      By combining design aesthetics with technical skills, I develop interfaces that are both visually appealing and functional, ensuring a seamless and enjoyable user journey.</p>
+    <div class="icon">
+      <a href="#"><i class='bx bxl-facebook-square'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+      <a href="#"><i class='bx bxl-whatsapp'></i></a>
+      <a href="#"><i class='bx bxl-linkedin'></i></a>
+    </div>
+  </div>
+  <div class="image">
+    <img src="/images/DSC_2905-removebg-preview.png" alt="Profile Image" class="profile-image">
+  </div>
+</section>
+
+<script src="style.js"></script>
 </body>
 </html>
