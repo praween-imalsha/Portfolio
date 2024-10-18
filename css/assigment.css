@@ -1,0 +1,74 @@
+#Assigment{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #023b67;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+}
+
+.card h2 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.code {
+    background-color: #007BFF;
+    color: white;
+}
+
+button.run {
+    background-color: #28A745;
+    color: white;
+}
+
+button.view {
+    background-color: #FFC107;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
