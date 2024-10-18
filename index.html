@@ -19,6 +19,73 @@
 
 
     }
+    nav{
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      position: relative;
+      height: 70px;
+      animation: slideTop .5s ease forwards;
+    }
+    nav ul{
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    nav ul li{
+      list-style-type: none;
+    }
+
+    nav ul li a{
+      text-decoration: none;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 25px;
+
+    }
+
+
+    .navbar a:hover {
+      color: #0ef;
+    }
+
+    /* To position and style the header section */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+      background-color: #151925; /* Keeps header background color */
+    }
+
+    .logo {
+      font-size: 25px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      animation: slideRight 1s ease forwards;
+    }
+
+
+    @keyframes slideRight  {
+      0%{
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      100%{
+        transform: translateX(0px);
+        opacity: 1;
+      }
+    }
+
   </style>
 </head>
 <body>
