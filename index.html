@@ -16,7 +16,7 @@
     body {
       color: #ededed;
       background-color:#151925;
-
+      font-family: Arial, sans-serif;
 
     }
 
@@ -279,10 +279,11 @@
       .services-list {
         gap: 15px;
       }
+
       .services-box p {
-        color: #bbb;
-        font-size: 80px;
+        font-size: 0.9em;
       }
+
     }
 
     /* Mobile Medium: 375px */
@@ -296,6 +297,9 @@
       .services-box h3 {
         font-size: 1.4em;
       }
+      .services-box p {
+        font-size: 1em;
+      }
     }
 
     /* Mobile Large: 425px */
@@ -308,6 +312,9 @@
       }
       .services-box h3 {
         font-size: 1.6em;
+      }
+      .services-box p {
+        font-size: 1.1em;
       }
     }
 
@@ -431,6 +438,7 @@
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      gap: 20px;
     }
 
     .project-item {
@@ -477,6 +485,32 @@
 
     .project-item .btn:hover {
       background-color: #0095ff;
+    }
+@media  screen and (max-width: 425px){
+  .project-item{
+    width: 100%;
+  }
+  .project-item p {
+    font-size: 5rem;
+  }
+}
+    @media  screen and (max-width: 320px){
+      .project-item p {
+        font-size: 2rem;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .project-item {
+        width: 48%; /* Two items per row */
+      }
+
+      h2 {
+        font-size: 2.2rem;
+      }
+
+      .project-item p {
+        font-size: 1rem;
+      }
     }
 
   </style>
@@ -600,6 +634,7 @@
     <div class="project-grid">
       <div class="project-item">
         <img src="images/unsplash_6sAl6aQ4OWI.png"  alt="project1">
+        <h3>Project Name 1</h3>
         <p>first sem project</p>
         <a href="#" class="btn">Read More</a>
 
