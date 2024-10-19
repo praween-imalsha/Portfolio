@@ -38,7 +38,7 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-family: Arial, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
@@ -76,13 +76,13 @@ nav.New span{
 
 
 }
-/* To position and style the header section */
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 10px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -2,7 +2,7 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #023b67;
+    color: #0095ff;
 }
 .container {
     display: flex;
@@ -59,16 +59,3 @@ button.code {
     color: white;
 }
 
-button.run {
-    background-color: #28A745;
-    color: white;
-}
-
-button.view {
-    background-color: #FFC107;
-    color: white;
-}
-
-button:hover {
-    opacity: 0.9;
-}

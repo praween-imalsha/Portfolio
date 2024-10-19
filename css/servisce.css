@@ -51,7 +51,7 @@
     color: #bbb;
     font-size: 20px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width:400px) {
     .services{
         grid-template-columns: repeat(2, 1fr);
     }

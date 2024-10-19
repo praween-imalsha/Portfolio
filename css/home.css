@@ -11,17 +11,21 @@
 }
 
 .home-content h3 {
+    color: white;
     font-size: 30px;
 }
 
 .home-content h1 {
+    color: white;
     font-size: 40px;
     margin: -5px 0;
 }
 .home .text{
     color: #00eeff;
 }
-
+.pragraph{
+    color: white;
+}
 .image {
     border-radius: 50%;
     padding: 10px;

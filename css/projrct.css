@@ -13,8 +13,9 @@
 
 #projects h2 {
     font-size: 2.5em;
-    margin-bottom: 76px;
-    color: white;
+    margin-bottom: 20px;
+    color: #0095ff;
+    text-align: center;
 }
 
 .project-grid {
