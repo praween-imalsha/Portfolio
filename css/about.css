@@ -1,40 +1,109 @@
-
 .about-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    background-color: #2f2f2f;
-    max-width: 100%;
-    margin: 0 auto;
+    background-color: #1d2330;
+    padding: 40px 20px;
 }
-.profile-picture {
+
+.about-heading h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.about-heading h1 span {
+    color: #00c4ff;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 60px auto;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.about-content {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 25px;
+    text-align: center;
+}
+
+.about-profile {
     border-radius: 50%;
     border: 5px solid #00c4ff;
     padding: 10px;
     margin-right: 30px;
     flex-shrink: 0;
+    text-align: center;
 }
 
-.profile-picture img {
+.about-Profile-Picture {
     border-radius: 100%;
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
 
-.about-content {
-    max-width: 600px;
-}
-.about-content p{
-    font-size: 20px;
-    color: white;
-}
-.about-content h2 span{
+.about-content h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
     color: #00eeff;
 }
-.about-content h2 {
-    font-size: 30px;
-    color: #fff;
+
+.about-content p {
+    font-size: 25px;
     margin-bottom: 20px;
+    line-height: 1.5;
+    color: white;
+}
+
+.about-content button {
+    display: inline-block;
+    background-color: #023b67;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.about-content button:hover {
+    background-color: #00c4ff;
+}
+
+@media screen and (max-width: 750px) {
+    .about-heading h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .about-heading h1 span {
+        font-size: 30px;
+    }
+
+    .about-container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 20px; /* Reduced padding for smaller screens */
+    }
+
+    .about-profile {
+        margin: 20px 0; /* Adds spacing between the image and content */
+    }
+
+    .about-Profile-Picture {
+        width: 250px; /* Reduce size for smaller screens */
+        height: 250px;
+    }
+
+    .about-content h2 {
+        font-size: 28px; /* Smaller font size for smaller screens */
+    }
+
+    .about-content p {
+        font-size: 18px; /* Reduced paragraph font size */
+    }
 }

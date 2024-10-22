@@ -1,6 +1,6 @@
 .services {
-    padding: 50px;
-    background-color: #1d2330;
+    padding: 40px;
+    background-color: #01233e;
     color: #fff;
     text-align: center;
 }
@@ -50,9 +50,4 @@
 .services-box p {
     color: #bbb;
     font-size: 20px;
-}
-@media all and (max-width:400px) {
-    .services{
-        grid-template-columns: repeat(2, 1fr);
-    }
 }

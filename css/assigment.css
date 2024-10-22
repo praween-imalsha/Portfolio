@@ -1,8 +1,8 @@
 #Assigment{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 30px;
     margin-bottom: 40px;
-    color: #0095ff;
+    color: #00d9ff;
 }
 .container {
     display: flex;
@@ -54,8 +54,10 @@ button {
     cursor: pointer;
 }
 
-button.code {
+button {
     background-color: #007BFF;
-    color: white;
+    color: #ffffff;
 }
-
+.buttons button:hover{
+    background-color: #00c4ff;
+}
